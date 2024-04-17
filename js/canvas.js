@@ -1,7 +1,7 @@
 var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
 
-var arrayPalabras = ["GATO", "PERRO", "CASA", "TOMATE", "CARRO", "VENTANA", "CIUDAD"];
+var arrayPalabras = ["manzana","guitarra","elefante","computadora","mariposa","bicicleta","sandía","dinosaurio","helado","flor","tigre","piano","unicornio","libro","avión","fresa","ratón","sol","perro","globo","agua","gato","pelota","nube","zapato","arcoíris","luna","árbol","reloj"];
 var intentos= 0;
 
 
