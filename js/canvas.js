@@ -8,7 +8,7 @@ var arrayPalabras = [
 	"COMPUTADORA",
 	"MARIPOSA",
 	"BICICLETA",
-	"SANDÍA",
+	"SANDIA",
 	"DINOSAURIO",
 	"HELADO",
 	"FLOR",
@@ -16,9 +16,9 @@ var arrayPalabras = [
 	"PIANO",
 	"UNICORNIO",
 	"LIBRO",
-	"AVIÓN",
+	"AVION",
 	"FRESA",
-	"RATÓN",
+	"RATON",
 	"SOL",
 	"PERRO",
 	"GLOBO",
@@ -27,9 +27,9 @@ var arrayPalabras = [
 	"PELOTA",
 	"NUBE",
 	"ZAPATO",
-	"ARCOÍRIS",
+	"ARCOIRIS",
 	"LUNA",
-	"ÁRBOL",
+	"ARBOL",
 	"RELOJ"
   ];
 var intentos= 0;
