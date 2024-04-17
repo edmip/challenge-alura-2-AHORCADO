@@ -1,7 +1,37 @@
 var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
 
-var arrayPalabras = ["manzana","guitarra","elefante","computadora","mariposa","bicicleta","sandía","dinosaurio","helado","flor","tigre","piano","unicornio","libro","avión","fresa","ratón","sol","perro","globo","agua","gato","pelota","nube","zapato","arcoíris","luna","árbol","reloj"];
+var arrayPalabras = [
+	"MANZANA",
+	"GUITARRA",
+	"ELEFANTE",
+	"COMPUTADORA",
+	"MARIPOSA",
+	"BICICLETA",
+	"SANDÍA",
+	"DINOSAURIO",
+	"HELADO",
+	"FLOR",
+	"TIGRE",
+	"PIANO",
+	"UNICORNIO",
+	"LIBRO",
+	"AVIÓN",
+	"FRESA",
+	"RATÓN",
+	"SOL",
+	"PERRO",
+	"GLOBO",
+	"AGUA",
+	"GATO",
+	"PELOTA",
+	"NUBE",
+	"ZAPATO",
+	"ARCOÍRIS",
+	"LUNA",
+	"ÁRBOL",
+	"RELOJ"
+  ];
 var intentos= 0;
 
 
