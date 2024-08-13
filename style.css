@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("image/fondo2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+
+.titulo {
+  font-family: 'Coming Soon', 'Arial', bold;
+  color: white;
+  text-shadow: 4px 4px 2px grey;
+  font-size: 70px;
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+
+}
+
+.btn {
+  font-family: 'Coming Soon', 'Arial', bold;
+  background: #00b7f8;
+  border-bottom: 5px solid #0045a6;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px #999;
+  color: #fff;
+  cursor: pointer;
+  height: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  width: 140px;
+}
+
+.btn:hover{
+  
+  background: #0096f7;
+}
+
+.btn:active{
+  box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px;
+  border-bottom:1px solid #0045A6;
+  text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+  transform: translateY(2px);
+  transition: all 0.1s ease 0s;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 0.5em;
+  width: 20%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#canvs{
+  margin: 0px 10%;
+  background-image: url("image/hoja2.png");
+  background-size: 750px 650px;
+  background-repeat:no-repeat;
+  background-position: -23px -40px;  
+  float: none;
+}
+
+.oculto{
+  display: none;
+}
+
+.ocultar{
+  visibility: hidden;
+}
+.no-aceptada{
+  color: red;
+  font-size: 18px;
+}
+
+.aceptada{
+  color: green;
+  font-size: 18px;
+}
+
+.letra{
+font-family: 'Coming Soon', 'Arial', bold;  
+}
