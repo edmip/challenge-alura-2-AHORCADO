@@ -27,7 +27,6 @@ var arrayPalabras = [
 	"NUBE",
 	"ZAPATO",
 	"ARCOIRIS",
-	"LUNA",
 	"ARBOL",
 	"RELOJ"
   ];
