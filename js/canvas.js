@@ -1,5 +1,6 @@
 var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
+var divNuevaPalabra = document.getElementById("div-nuevaPalabra");
 
 var arrayPalabras = [
 	"GUITARRA",
@@ -46,7 +47,13 @@ var palabra = palabraSecreta(arrayPalabras);
 //FUNCION PARA INICIAR EL JUEGO
 function iniciarJuego(){
 	
-	pantalla.classList.remove("oculto");
+	pantalla.classList.remove("oculto");//MOSTRAMOS EL CANVAS
+	divNuevaPalabra.classList.add("oculto");//OCULTAMOS EL DIV PARA AGREGAR PALABRA
+	pincel.clearRect(0, 0, pantalla.width, pantalla.height); //LIMPIAMOS EL CANVAS
+	pincel.fillStyle = "white";
+	 boton.textContent = "VOLVER AL INICIO";
+    boton.removeEventListener("click", iniciarJuego);
+    boton.addEventListener("click", volverAlInicio);
 	//console.log(palabra);
 	dibujarBase(); //DIBIJAMOS LA BASE DDEL AHORCADO
 	guiones();  //DIBUJAMOS LOS GUIONES DE LAS LETRAS
@@ -85,8 +92,12 @@ function iniciarJuego(){
 
 }
 
+function volverAlInicio() {// Volver al inicio del juego
+    window.location.reload();
+}
 
-///FUNCION PARA DINUJAR GUIONES
+
+///FUNCION PARA DIBUJAR GUIONES
 function guiones (){
 	var cantidad = palabra.length;
 	var x=400;
@@ -99,7 +110,7 @@ function guiones (){
 		
 
 
-		///DIBIJAMOS LAS LINEAS SEGUN LAS PALABRAS
+		///DIBUJAMOS LAS LINEAS DE LAS LETRAS SEGUN LAS PALABRAS
 		pincel.beginPath();	
 		pincel.lineWidth = 2;	
 		pincel.moveTo((x+10), y);
@@ -112,7 +123,7 @@ function guiones (){
 }
 
 
-///FUNCION PARA DINUJAR LA BASE DEL AHORCADO
+///FUNCION PARA DIBUJAR LA BASE DEL AHORCADO
 function dibujarBase(){
 
 		pincel.fillStyle= "black";

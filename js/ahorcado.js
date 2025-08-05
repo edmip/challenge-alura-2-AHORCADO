@@ -83,33 +83,30 @@ function letraIncorrecta(letra,partida){
 }
 
 
-function agregarPalabra(){
-	var input = document.querySelector("#input-nueva-palabra");
-	var palabra_agregada = input.value.trim().toUpperCase();
-	var expresion = /[A-Z]/;
-	var expresion2 = /[0-9]/;
-	var comparacion = palabra_agregada.match(expresion);
-	var comparacion2 = palabra_agregada.match(expresion2);
-	
-	if ((comparacion == null) || (comparacion2 != null)) {
+function agregarPalabra(){// Agregar palabra al array de palabras
+    var input = document.querySelector("#input-nueva-palabra");
+    var palabra_agregada = input.value.trim().toUpperCase();
 
-		noAceptaPalabra();
-		return;
-						
-	}else{
-				
-		arrayPalabras.push(palabra_agregada);
-		
-		siAceptaPalabra();
-		
+    // Solo letras mayúsculas, sin espacios ni signos
+    var expresion = /^[A-Z]+$/;
+
+    if (!expresion.test(palabra_agregada)) {
+        noAceptaPalabra();
 		setTimeout(function(){
-    		limpiarSpan();
-		}, 3000);
-		input.value="";
-		return;
-	}
-	
-	
+            limpiarSpan();
+        }, 3000);
+        return;
+
+    } else {
+		// Verificar si la palabra ya existe en el array
+        arrayPalabras.push(palabra_agregada);
+        siAceptaPalabra();
+        setTimeout(function(){
+            limpiarSpan();
+        }, 3000);
+        input.value="";
+        return;
+    }
 }
 
 

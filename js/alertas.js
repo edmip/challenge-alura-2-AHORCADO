@@ -26,7 +26,7 @@ function gano(palabra){
 function noAceptaPalabra(){
 	mensaje.classList.remove("aceptada");
 	mensaje.classList.add("no-aceptada");
-	mensaje.innerHTML="Palabra introdicida no es valida, solo se permiten letras mayusculas";
+	mensaje.innerHTML="Palabra introdicida no es valida, solo se permiten letras, sin espacios ni numeros";
 }
 
 function siAceptaPalabra(){
