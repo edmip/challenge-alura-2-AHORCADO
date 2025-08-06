@@ -129,8 +129,8 @@ function dibujarBase(){
 		pincel.fillStyle= "black";
 		pincel.beginPath();
 		pincel.moveTo(70,470);
-		pincel.lineTo(130,500);
-		pincel.lineTo(10,500);
+		pincel.lineTo(110,500);
+		pincel.lineTo(30,500);
 		pincel.fill();
 }
 
